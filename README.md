@@ -2,19 +2,42 @@
 
 ![Docker Magic](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRydm9ueGZ6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/3ohzdTbc97tLR87O3S/giphy.gif)
 
-## 📌 What's happening here?
-This repository is a collection of hands-on solutions for broken infrastructure. Each directory contains a deep dive into a specific system failure—ranging from Docker container crashes and networking bottlenecks to PostgreSQL replication mismatches.
+## 📌 Overview
+This repository contains hands-on debugging scenarios for broken systems and infrastructure.  
+Each directory represents a real-world failure case and documents the investigation and fix.
 
-The focus is on **Root Cause Analysis (RCA)**: finding why the system is "sad" and implementing the most efficient fix to bring it back to a healthy state.
+The focus is on **Root Cause Analysis (RCA)** — understanding *why* the system failed, not just how to restart it.
+
+---
+
+## 🔍 What You'll Find Here
+- Docker containers failing to start
+- Networking and port conflicts
+- Misconfigured services and permissions
+- System and database-level issues
+- Practical Linux-based debugging
+
+Each scenario includes:
+- Problem description  
+- Investigation steps  
+- Root cause  
+- Final fix  
 
 ---
 
-## ⚙️ The Workflow
-![DevOps Life]([https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/VGG8UY1nEl66Y/giphy.gif](https://i.pinimg.com/originals/f5/5e/80/f55e8059ea945abfd6804b887dd4a0af.gif))
+## ⚙️ Debugging Workflow
 
-- **Log Hunting:** Digging through `journalctl` and `docker logs` to spot the error.
-- **Environment Auditing:** Checking system parameters, file descriptors, and network ports.
-- **Patching & Optimization:** Fixing the config and ensuring it doesn't break again.
+![DevOps Life](https://i.pinimg.com/originals/f5/5e/80/f55e8059ea945abfd6804b887dd4a0af.gif)
+
+- **Log Analysis:** `journalctl`, `docker logs`, service logs  
+- **System Inspection:** ports, permissions, limits, environment variables  
+- **Fix & Validation:** apply the solution and verify stability  
 
 ---
-**Maintained by a DevOps Engineer focused on keeping the lights on.**
+
+## 🎯 Goal
+Build strong debugging and troubleshooting skills through realistic infrastructure failures.
+
+---
+
+**Maintained by a DevOps Engineer focused on reliability and system recovery.**
