@@ -1,6 +1,6 @@
 # 🐳 Scenario: Quito - Control One Container from Another
 
-![Docker](https://media.tenor.com/soT27Z6i4gMAAAAM/hop-on-docker-desktop-docker.gif)
+![Docker Whale](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGV2b3BzZHVja2VyZ3ZpZ3V3cWQ1NnZ0NnA0Y2N5eWg5eHduMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SS8CV2rQdlYNLtBCiF/giphy.gif)
 
 ## 📝 Challenge Description
 The objective is to manage Docker containers from within another container. Specifically, starting a stopped `nginx` container by executing commands from inside the `docker-access` container.
