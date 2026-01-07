@@ -1,28 +1,20 @@
-# 🛠️ DevOps & Infrastructure Troubleshooting Lab
+# 🛠️ System Debugging & Infrastructure Lab
 
-![Docker Deployment](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRydm9ueGZ6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/3ohzdTbc97tLR87O3S/giphy.gif)
+![Docker Magic](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRydm9ueGZ6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/3ohzdTbc97tLR87O3S/giphy.gif)
 
-## 📌 Overview
-Documentation of real-world infrastructure fixes and system debugging. This repository focuses on Root Cause Analysis (RCA) for Dockerized environments, Linux systems, and Database clusters.
+## 📌 What's happening here?
+This repository is a collection of hands-on solutions for broken infrastructure. Each directory contains a deep dive into a specific system failure—ranging from Docker container crashes and networking bottlenecks to PostgreSQL replication mismatches.
 
----
-
-## 📂 Challenge Registry
-
-| Scenario | Level | Stack | Documentation |
-| :--- | :--- | :--- | :--- |
-| **Helsingør** | Medium | PostgreSQL, Docker-Compose | [Analysis & Fix](./Helsingor-Postgres-Replication/) |
-| **Salta** | Medium | Docker, Node.js | [Analysis & Fix](./Salta-Nodejs-App/) |
-| **Saint John** | Easy | Linux, Process Management | [Analysis & Fix](./Saint-John-Log-Killer/) |
+The focus is on **Root Cause Analysis (RCA)**: finding why the system is "sad" and implementing the most efficient fix to bring it back to a healthy state.
 
 ---
 
-## ⚙️ Core Methodology
-![DevOps Life](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRydm9ueGZ6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/l0HlOnf0S70qJshQ4/giphy.gif)
+## ⚙️ The Workflow
+![DevOps Life](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3JmJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ25vcmUmY3Q9Zw/VGG8UY1nEl66Y/giphy.gif)
 
-- **Analyze:** Investigating logs (`journalctl`, `docker logs`) and system states.
-- **Isolate:** Identifying the failure point (Networking, Permissions, or Config mismatch).
-- **Resolve:** Implementing optimized fixes and verifying system stability.
+- **Log Hunting:** Digging through `journalctl` and `docker logs` to spot the error.
+- **Environment Auditing:** Checking system parameters, file descriptors, and network ports.
+- **Patching & Optimization:** Fixing the config and ensuring it doesn't break again.
 
 ---
-**Focusing on high-availability and system reliability.**
+**Maintained by a DevOps Engineer focused on keeping the lights on.**
